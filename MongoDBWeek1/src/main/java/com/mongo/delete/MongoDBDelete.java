@@ -8,6 +8,7 @@ import org.bson.Document;
 public class MongoDBDelete {
     public static void main(String[] args) {
         MongoClient mongoClient = null;
+        
         try {
             mongoClient = new MongoClient("localhost", 27017);
             MongoDatabase database = mongoClient.getDatabase("Customer");
